@@ -26,6 +26,29 @@
             --border-color: #333333;
             --glass-bg: rgba(255, 255, 255, 0.03);
             --glass-border: rgba(255, 255, 255, 0.08);
+            
+            /* Social Media Links */
+            --link-linkedin: "https://www.linkedin.com/in/andrew-huynh-data/";
+            --link-github: "https://github.com/andrew-huynh-data";
+            --link-twitter: "https://www.twitter.com/andrew-huynh-data";
+            --link-instagram: "https://www.instagram.com/andrew-huynh-data";
+            --link-facebook: "https://www.facebook.com/andrew-huynh-data";
+            --link-youtube: "https://www.youtube.com/andrew-huynh-data";
+            --link-twitch: "https://www.twitch.com/andrew-huynh-data";
+            --link-tiktok: "https://www.tiktok.com/andrew-huynh-data";
+            --link-pinterest: "https://www.pinterest.com/andrew-huynh-data";
+            --link-reddit: "https://www.reddit.com/andrew-huynh-data";
+            --link-medium: "https://www.medium.com/andrew-huynh-data";
+            --link-devto: "https://www.dev.to/andrew-huynh-data";
+            --link-hashnode: "https://www.hashnode.com/andrew-huynh-data";
+            --link-codewars: "https://www.codewars.com/andrew-huynh-data";
+            --link-codechef: "https://www.codechef.com/andrew-huynh-data";
+            --link-codeforces: "https://www.codeforces.com/andrew-huynh-data";
+            
+            /* Professional Links */
+            --link-doordash-blog: "https://careersatdoordash.com/blog/overcoming-rapid-growth-challenges-for-datasets-in-snowflake/";
+            --link-youtube-ai: "https://www.youtube.com/live/g5keUVsaSM8?t=1951s";
+            --link-email: "mailto:AndrewDoesData@gmail.com";
         }
 
         html {
@@ -650,6 +673,18 @@
             transform: translateY(0);
         }
 
+        /* Link styles */
+        a {
+            color: var(--text-primary);
+            text-decoration: underline;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent-primary);
+            text-decoration: underline;
+        }
+
         /* Accent colors for different skills */
         .skill-planet:nth-child(1) .skill-icon { border-color: var(--accent-primary); }
         .skill-planet:nth-child(2) .skill-icon { border-color: var(--accent-secondary); }
@@ -687,11 +722,7 @@
         </div>
         
         <div class="hero-content">
-            <div class="hero-badge">
-                <div class="status-dot"></div>
-                Available for new opportunities
-            </div>
-            <h1 class="hero-title">Andrew Huynh</h1>
+            <h1 class="hero-title">Andrew H</h1>
             <p class="hero-subtitle">Data & Analytics Leader transforming billions of records into business-critical insights that drive growth and innovation</p>
             
             <div class="hero-stats">
@@ -734,7 +765,7 @@
                     <span>🗂️</span>
                 </div>
                 <h3 class="skill-title">Modern Data Stack</h3>
-                <p class="skill-description">Building scalable, maintainable data pipelines and semantic layers for enterprise-grade analytics</p>
+                <p class="skill-description"><a href="javascript:void(0)" onclick="window.open(window.links.doordashBlog, '_blank')">Building scalable</a>, maintainable data pipelines and semantic layers for enterprise-grade analytics</p>
                 <div class="skill-tags">
                     <span class="skill-tag">dbt</span>
                     <span class="skill-tag">Snowflake</span>
@@ -749,7 +780,7 @@
                     <span>📈</span>
                 </div>
                 <h3 class="skill-title">Business Intelligence</h3>
-                <p class="skill-description">Creating self-service analytics platforms and executive dashboards that drive strategic decisions</p>
+                <p class="skill-description">Creating <a href="javascript:void(0)" onclick="window.open(window.links.sigmacomputing, '_blank')">scalable, self-service</a> analytics platforms and executive dashboards that drive strategic decisions</p>
                 <div class="skill-tags">
                     <span class="skill-tag">Tableau</span>
                     <span class="skill-tag">Looker</span>
@@ -761,24 +792,10 @@
 
             <div class="skill-planet glass-card reveal">
                 <div class="skill-icon">
-                    <span>☁️</span>
-                </div>
-                <h3 class="skill-title">Cloud Architecture</h3>
-                <p class="skill-description">Designing multi-cloud data infrastructures optimized for performance, cost, and scalability</p>
-                <div class="skill-tags">
-                    <span class="skill-tag">AWS</span>
-                    <span class="skill-tag">Azure</span>
-                    <span class="skill-tag">Snowflake</span>
-                    <span class="skill-tag">GCP</span>
-                </div>
-            </div>
-
-            <div class="skill-planet glass-card reveal">
-                <div class="skill-icon">
                     <span>👥</span>
                 </div>
                 <h3 class="skill-title">Leadership & Strategy</h3>
-                <p class="skill-description">Leading cross-functional teams, building data cultures, and aligning technical initiatives with business goals</p>
+                <p class="skill-description">Leading cross-functional teams, building <a href="javascript:void(0)" onclick="window.open(window.links.brooklyndata, '_blank')">data cultures</a>, and aligning technical initiatives with business goals</p>
                 <div class="skill-tags">
                     <span class="skill-tag">Team Leadership</span>
                     <span class="skill-tag">Data Strategy</span>
@@ -792,7 +809,9 @@
                     <span>🤖</span>
                 </div>
                 <h3 class="skill-title">AI & Automation</h3>
-                <p class="skill-description">Leveraging AI tools and automation to accelerate development cycles and enhance data workflows</p>
+                <p class="skill-description"><a href="javascript:void(0)" onclick="window.open(window.links.youtubeAI, '_blank')">Leveraging AI tools</a> and 
+                                             <a href="javascript:void(0)" onclick="window.open(window.links.youtubeAI2, '_blank')">automation</a> to accelerate development cycles and 
+                                             <a href="javascript:void(0)" onclick="window.open(window.links.supademo, '_blank')">enhance data workflows</a> </p>
                 <div class="skill-tags">
                     <span class="skill-tag">GitHub Copilot</span>
                     <span class="skill-tag">Cursor</span>
@@ -1037,11 +1056,48 @@
         </div>
         
         <div class="contact-buttons reveal">
-            <a href="mailto:AndrewDoesData@gmail.com" class="contact-btn primary">Get in Touch</a>
+            <a href="" onclick="navigator.clipboard.writeText('AndrewDoesData@gmail.com').then(() => alert('Email copied to clipboard: AndrewDoesData@gmail.com')).catch(() => alert('Email: AndrewDoesData@gmail.com'))" class="contact-btn primary">Get in Touch</a>
         </div>
     </section>
 
     <script>
+        // Link variables - easily accessible throughout the page
+        window.links = {
+            // Social Media
+            linkedin: "https://www.linkedin.com/in/andrew-huynh-data/",
+            github: "https://github.com/andrew-huynh-data",
+            twitter: "https://www.twitter.com/andrew-huynh-data",
+            instagram: "https://www.instagram.com/andrew-huynh-data",
+            facebook: "https://www.facebook.com/andrew-huynh-data",
+            youtube: "https://www.youtube.com/andrew-huynh-data",
+            twitch: "https://www.twitch.com/andrew-huynh-data",
+            tiktok: "https://www.tiktok.com/andrew-huynh-data",
+            pinterest: "https://www.pinterest.com/andrew-huynh-data",
+            reddit: "https://www.reddit.com/andrew-huynh-data",
+            medium: "https://www.medium.com/andrew-huynh-data",
+            devto: "https://www.dev.to/andrew-huynh-data",
+            hashnode: "https://www.hashnode.com/andrew-huynh-data",
+            codewars: "https://www.codewars.com/andrew-huynh-data",
+            codechef: "https://www.codechef.com/andrew-huynh-data",
+            codeforces: "https://www.codeforces.com/andrew-huynh-data",
+            
+            // Professional Links
+            doordashBlog: "https://careersatdoordash.com/blog/overcoming-rapid-growth-challenges-for-datasets-in-snowflake/",
+            youtubeAI: "https://www.youtube.com/live/g5keUVsaSM8?t=1951s",
+            youtubeAI2: "https://youtu.be/-_CP3Ms_xuU?feature=shared",
+            supademo: "https://app.supademo.com/demo/cmd5eiote02j50x0jqac8i430",
+            brooklyndata: "https://www.brooklyndata.co/ideas/2024/12/18/how-to-design-an-effective-data-intake-process",
+            sigmacomputing: "https://www.sigmacomputing.com/customers/doordash-logs-a-30-increase-in-queries-while-keeping-the-snowflake-cost-constant-with-sigma",
+            doordashlabs: "https://labs.doordash.com/",
+
+            email: "mailto:AndrewDoesData@gmail.com"
+        };
+
+        // Helper function to get link by name
+        function getLink(linkName) {
+            return window.links[linkName] || '#';
+        }
+
         // Custom cursor
         const cursorDot = document.querySelector('.cursor-dot');
         const cursorOutline = document.querySelector('.cursor-outline');
